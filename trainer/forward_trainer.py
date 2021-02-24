@@ -25,6 +25,7 @@ class ForwardTrainer:
         self.l1_loss = MaskedL1()
 
     def train(self, model: ForwardTacotron, optimizer: Optimizer) -> None:
+        print(self.paths.data, 'self.paths.dataself.paths.dataself.paths.dataself.paths.dataself.paths.data')
         for i, session_params in enumerate(hp.forward_schedule, 1):
             lr, max_step, bs = session_params
             if model.get_step() < max_step:
