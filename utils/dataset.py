@@ -120,6 +120,7 @@ def get_tts_datasets(path: Path, batch_size, r, model_type='tacotron'):
         print(f'Using {len(train_data)} train files. '
               f'Filtered {train_len_original - len(train_data)} files due to bad attention!')
 
+    print(train_data)
     train_ids, train_lens = zip(*train_data)
     val_ids, val_lens = zip(*val_data)
     if model_type == 'tacotron':
