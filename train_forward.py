@@ -96,6 +96,7 @@ if __name__ == '__main__':
     restore_checkpoint('forward', paths, model, optimizer, create_if_missing=True)
 
     if force_gta:
+        print(paths.data, 'paths.datapaths.datapaths.datapaths.datapaths.data')
         print('Creating Ground Truth Aligned Dataset...\n')
         train_set, val_set = get_tts_datasets(paths.data, 8, r=1, model_type='forward')
         create_gta_features(model, train_set, val_set, paths.gta)
