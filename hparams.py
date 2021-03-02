@@ -162,7 +162,7 @@
 # CONFIG -----------------------------------------------------------------------------------------------------------#
 
 # Here are the input and output data paths (Note: you can override wav_path in preprocess.py)
-wav_path = '/home/manuel_servex/audios/vanessa'
+wav_path = '/home/manuel_servex/audios/alex'
 data_path = 'data/'
 
 # model ids are separate - that way you can use a new tts with an old wavernn and vice versa
